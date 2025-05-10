@@ -1,0 +1,52 @@
+:root {
+    --deep-rose: #CA3C66;
+    --soft-rose: #DB6A8F;
+    --pale-rose: #E8AABE;
+    --mint: #A7E0E0;
+    --deep-teal: #4AA3A2;
+    --white: #FFF5F5;
+  }
+  
+  /* Header Commun */
+  .player-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: linear-gradient(to right, var(--deep-rose), var(--soft-rose));
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .header-logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .window-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Styles de base */
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--white);
+    margin: 0;
+    padding-top: 70px; /* Pour compenser le header fixe */
+    min-height: 100vh;
+  }

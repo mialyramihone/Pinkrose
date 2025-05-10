@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>PinkRose - Now Playing</title>
+  <link rel="stylesheet" href="css/common.css">
+  <style>
+    .now-playing {
+      max-width: 500px;
+      margin: 40px auto;
+      text-align: center;
+    }
+    
+    .album-art {
+      width: 250px;
+      height: 250px;
+      border-radius: 20px;
+      margin: 0 auto 30px;
+      box-shadow: 0 10px 30px rgba(202, 60, 102, 0.3);
+      overflow: hidden;
+    }
+    
+    .song-title {
+      font-size: 24px;
+      color: var(--deep-rose);
+      margin-bottom: 5px;
+    }
+    
+    .song-artist {
+      font-size: 18px;
+      color: var(--deep-teal);
+    }
+    
+    .progress-container {
+      margin: 30px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Commun -->
+  <header class="player-header">
+    <div class="header-left">
+      <img src="img/logo-small.png" alt="Logo" class="header-logo">
+      <h1>PinkRose Player</h1>
+    </div>
+    <div class="window-controls">
+      <button id="minimize-btn">－</button>
+      <button id="close-btn">✕</button>
+    </div>
+  </header>
+
+  <!-- Contenu Spécifique -->
+  <main>
+    <div class="now-playing">
+      <div class="album-art">
+        <img src="img/current-album.jpg" alt="Album Cover">
+      </div>
+      <h2 class="song-title">Pink Sunset</h2>
+      <p class="song-artist">Luna Rose</p>
+      
+      <div class="progress-container">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <div class="time-display">
+          <span>1:24</span>
+          <span>3:45</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>PinkRose - Playlist</title>
+  <link rel="stylesheet" href="css/common.css">
+  <style>
+    .track-list {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    
+    .track-item {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      margin-bottom: 10px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(202, 60, 102, 0.1);
+    }
+    
+    .track-info {
+      flex-grow: 1;
+    }
+    
+    .track-title {
+      font-weight: 600;
+      color: var(--deep-rose);
+    }
+    
+    .track-artist {
+      font-size: 0.9em;
+      color: var(--deep-teal);
+    }
+    
+    .track-menu {
+      margin-left: 15px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Commun -->
+  <header class="player-header">
+    <div class="header-left">
+      <img src="img/logo-small.png" alt="Logo" class="header-logo">
+      <h1>PinkRose Player</h1>
+    </div>
+    <div class="window-controls">
+      <button id="minimize-btn">－</button>
+      <button id="close-btn">✕</button>
+    </div>
+  </header>
+
+  <!-- Contenu Spécifique -->
+  <main>
+    <div class="track-list">
+      <h2>Votre Playlist</h2>
+      <div class="track-item">
+        <div class="track-info">
+          <div class="track-title">Pink Sunset</div>
+          <div class="track-artist">Luna Rose</div>
+        </div>
+        <div class="track-duration">3:45</div>
+        <div class="track-menu">
+          <button>⋮</button>
+        </div>
+      </div>
+      <!-- Plus d'éléments... -->
+    </div>
+  </main>
+
+  <script src="js/common.js"></script>
+</body>
+</html>
